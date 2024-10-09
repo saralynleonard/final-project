@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "name": "CosmoRock",
+        "launchDate": "2036-03-01",
+        "aboutMission": "The CosmoRock mission is designed to explore and mine 16 Psyche, a metallic asteroid located in the asteroid belt between Mars and Jupiter. The Aurora Extractor spacecraft will be deployed to target this asteroid, which is known for its high concentrations of iron, nickel, and potentially valuable platinum group metals. The mission aims to extract and process these metals for use in future space missions and to support the development of space-based industries.",
+        "missionCost": 9087549000,
+        "targetAsteroid": "16 Psyche",
+        "isFeatured": true,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
+    },
+    {
+        "id": 2,
+        "name": "AstroMiner",
+        "launchDate": "2038-07-21",
+        "aboutMission": "The AstroMiner mission aims to explore and mine the asteroid 162173 Ryugu, a carbonaceous near-Earth asteroid rich in organic compounds and water. The mission is designed to extract valuable resources, including water, carbon-based materials, and potentially rare minerals, to support future space exploration and in-situ resource utilization.",
+        "missionCost": 1910940000,
+        "targetAsteroid": "162173 Ryugu",
+        "isFeatured": true,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    },
+    {
+        "id": 3,
+        "name": "Stardust Collector",
+        "launchDate": "2039-08-16",
+        "aboutMission": "The Stardust Collector mission aims to explore and mine 511 Davida, a large asteroid located in the asteroid belt. The Titan Prospector spacecraft will be tasked with extracting valuable metallic resources from 511 Davida, which is known for its potential metal content, including iron and nickel. This mission will test new mining technologies and provide crucial data for future resource utilization in space.",
+        "missionCost": 1758470000,
+        "targetAsteroid": "511 Davida",
+        "isFeatured": false,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
+    },
+    {
+        "id": 4,
+        "name": "Galactic Dig",
+        "launchDate": "2036-0928",
+        "aboutMission": "The Galactic Dig mission is set to mine and analyze valuable minerals from the asteroid 46610 Bésixdouze, located in the asteroid belt between Mars and Jupiter. This mission aims to assess the feasibility of large-scale asteroid mining and extract precious resources, such as platinum-group metals and rare earth elements, to support future space exploration and resource needs on Earth.",
+        "missionCost": 1849839000,
+        "targetAsteroid": "46610 Besixdouze",
+        "isFeatured": false,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    },
+    {
+        "id": 5,
+        "name": "SpaceMine",
+        "launchDate": "2035-02-19",
+        "aboutMission": "The SpaceMine mission aims to explore and mine the asteroid 2012 TC4 to extract rare earth elements and volatile compounds, such as water ice. This mission will focus on understanding the asteroid’s structure, composition, and potential resource value, contributing to scientific knowledge and advancing space mining technologies.",
+        "missionCost": 1649839000,
+        "targetAsteroid": "2012 TC4",
+        "isFeatured": false,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    },
+    {
+        "id": 6,
+        "name": "Odyssey",
+        "launchDate": "2038-05-18",
+        "aboutMission": "Odyssey will explore and mine 1932 Wernher for its diverse array of metals, including iron, cobalt, and nickel. The mission's primary objective is to establish a processing facility in space to facilitate future mining operations.",
+        "missionCost": 1649839000,
+        "targetAsteroid": "1932 Wernher",
+        "isFeatured": true,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    },
+    {
+        "id": 7,
+        "name": "Horizon",
+        "launchDate": "2037-03-21",
+        "aboutMission": "The Horizon mission targets 1865 Cerberus to harvest its unique blend of minerals and metals. The objective is to analyze its composition while establishing a base for future missions in the asteroid belt.",
+        "missionCost": 1758470000,
+        "targetAsteroid": "1865 Cerberus",
+        "isFeatured": false,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
+    },
+    {
+        "id": 8,
+        "name": "Pioneer",
+        "launchDate": "2040-06-08",
+        "aboutMission": "Pioneer will mine 2437 Bellerophon for its abundant supply of water and volatiles. These resources are critical for sustaining long-term human exploration and could support life-support systems in deep space.",
+        "missionCost": 1758470000,
+        "targetAsteroid": "2437 Bellerophon",
+        "isFeatured": false,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
+    },
+    {
+        "id": 9,
+        "name": "Mining Vanguard",
+        "launchDate": "2034-08-09",
+        "aboutMission": "Targeting 243 Ida, this mission will focus on extracting water ice and rare minerals. The harvested water will support future deep-space missions, while the minerals will be processed for use in spacecraft manufacturing.",
+        "missionCost": 1798470000,
+        "targetAsteroid": "243 Ida",
+        "isFeatured": false,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
+    },
+    {
+        "id": 10,
+        "name": "Aurora",
+        "launchDate": "2037-12-15",
+        "aboutMission": "The Aurora mission targets 5110 Midas, an asteroid known for its high carbon content. The mission will focus on extracting organic compounds that could be used in space agriculture, contributing to sustainable life support systems.",
+        "missionCost": 1658470000,
+        "targetAsteroid": "5110 Midas",
+        "isFeatured": false,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    }
+    
+]

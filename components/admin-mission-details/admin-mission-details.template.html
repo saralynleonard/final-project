@@ -1,0 +1,36 @@
+<h3>Administrative Details for {{$ctrl.mission.name}}</h3>
+
+<div id="launch-date"><p>Launch Date: {{$ctrl.mission.launchDate | date: 'longDate'}}</p></div>
+<div id="details-about">
+    <p>
+        {{$ctrl.mission.aboutMission}}
+    </p>
+</div>
+<div id="admin-mission-detail-options">
+    <a id="admin-mission-detail-edit" href="#!/edit/{{$ctrl.mission.id}}">Edit</a>
+    <div id="admin-mission-detail-options-separator">|</div>
+    <a id="admin-mission-detail-delete" href="/mission/delete/{{$ctrl.mission.id}}">Delete</a>
+</div>
+<div id="table-container">
+    <div id="total-investments">
+        <p>TOTAL INVESTMENTS: {{$ctrl.totalInvestments() | currency}}</p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Investment ID</th>
+                <th>Investment Amount</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="investment in $ctrl.investments">
+                <td>{{investment.id}}</td>
+
+                <td>{{investment.investmentAmount | currency}}</td>
+                <td><a id="admin-mission-detail-edit" href="/admin/investment/details/{{investment.id}}">View</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

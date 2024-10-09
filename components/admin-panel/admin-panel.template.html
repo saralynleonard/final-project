@@ -1,0 +1,53 @@
+
+<section id="add-mission-section">
+    <button ng-click="$ctrl.goToPage('/add/mission')" id="add-mission-btn">
+        + Add Mission
+    </button>
+</section>
+<section id="admin-mission-search">
+    <form method="POST" action="/lookup/mission" id="admin-mission-search-form">
+        <input type="text" name="asteroidName" id="asteroidName" placeholder="Search by target asteroid" required>
+        <button type="submit" id="admin-mission-search-submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>    
+    </form>
+</section>
+<h3>Upcoming Missions</h3>
+<div id="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Mission Name</th>
+                <th>Launch Date</th>
+                <th>Mission Cost</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="mission in $ctrl.missions">
+                <td id="table-msn-name"><a href="#!/admin/mission/{{mission.id}}">{{mission.name}}</a></td>
+                <td>{{mission.launchDate | date: 'longDate'}}</td>
+                <td>{{mission.missionCost | currency}}</td>
+                <td>
+                    <a href="#!/edit/{{mission.id}}">Edit</a> |
+                    <a href="/mission/delete/{{mission.id}}" id="admin-panel-msn-delete">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div id="user-list">
+    <table>
+        <thead>
+            <tr>
+                <th>Users</th>
+            </tr>
+        </thead>
+
+        <tr ng-repeat="account in $ctrl.accounts">
+            <td><a href="/user/{{account.id}}">{{account.firstName}} {{account.lastName}}</a></td>
+        </tr>
+
+    </table>
+</div>

@@ -1,0 +1,23 @@
+<section id="mission-details-container">
+    <h3 id="mission-details">About {{$ctrl.mission.name}}</h3>
+    <div id="launch-date"><p>Launch Date: {{$ctrl.mission.launchDate | date: 'M/dd/yyyy'}}</p></div>
+    <div id="details-about">
+        <p>
+            {{$ctrl.mission.aboutMission}}
+        </p>
+    </div>
+    
+    <section id="launch-site">
+        <div>
+            <p>Launch Location: {{$ctrl.mission.launchLocation}}</p>
+        </div>
+    
+        <div id="map">
+    
+        </div>
+        <a href="#!/directions/{{$ctrl.mission.id}}" id="directions">Get Directions</a>
+
+    </section>
+    
+    <a href="/invest/{{$ctrl.mission.id}}" id="details-invest-btn">Invest</a>
+</section>

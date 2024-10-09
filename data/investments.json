@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "investmentAmount": 39500,
+        "investmentPercent": 28,
+        "accountId": 1,
+        "missionId": 2
+    },
+    {
+        "id": 2,
+        "investmentAmount": 3550,
+        "investmentPercent": 28,
+        "accountId": 1,
+        "missionId": 2
+    },
+    {
+        "id": 3,
+        "investmentAmount": 20500,
+        "investmentPercent": 30,
+        "accountId": 2,
+        "missionId": 4
+    },
+    {
+        "id": 4,
+        "investmentAmount": 2000,
+        "investmentPercent": 0.0001,
+        "accountId": 2,
+        "missionId": 5
+    }
+]

@@ -1,0 +1,30 @@
+<h3>Edit the {{$ctrl.mission.name}} Mission</h3>
+
+<form ng-submit="$ctrl.saveEdits()" id="edit-mission-form">
+    <input ng-model="$ctrl.mission.name" type="text" name="missionName" id="missionName">
+    <br>
+
+    <input ng-model="$ctrl.mission.launchDate" type="date" name="launchDate" id="launchDate">
+
+    <input ng-model="$ctrl.mission.missionCost" type="number" name="missionCost" id="missionCost">
+
+    <textarea ng-model="$ctrl.mission.aboutMission" name="aboutMission" id="aboutMission"></textarea>
+
+<br>
+
+    <label for="isFeatured" class="custom-checkbox">Is this a featured mission?
+
+            <input ng-model="$ctrl.mission.isFeatured" type="checkbox" name="isFeatured" id="isFeatured" class="custom-checkbox" checked>
+
+    </label>
+
+
+    <input ng-model="$ctrl.mission.id" type="hidden" name="id" id="id">
+
+    <section id="edit-mission-form-btn">
+        <!-- <button id="edit-mission-save">Save</button>
+        <button ng-click="$ctrl.goToPage('/admin')" id="edit-mission-cancel">Cancel</button> -->
+        <input type="submit" value="Save" id="edit-mission-save">
+        <input type="button" value="Cancel" id="edit-mission-cancel" ng-click="$ctrl.goToPage('/admin')">
+    </section>
+</form>

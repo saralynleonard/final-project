@@ -1,0 +1,23 @@
+<h3>Add Mission: {{$ctrl.newMission.name}}</h3>
+<form ng-submit="$ctrl.addMission($ctrl.newMission)" id="add-mission-form">
+
+    <input ng-model="$ctrl.newMission.name" class="input" type="text" id="missionName" name="missionName" placeholder="Mission Name" required> 
+
+    <input ng-model="$ctrl.newMission.launchDate" type="date" id="launchDate" name="launchDate" placeholder="Launch Date" required>
+
+    <input ng-model="$ctrl.newMission.missionCost" type="number" id="missionCost" name="missionCost" min="1" step="1" placeholder="Mission Cost">
+
+    <textarea ng-model="$ctrl.newMission.aboutMission" name="aboutMission" id="aboutMission" placeholder="Description of mision..."></textarea>
+
+    <label for="isFeatured" class="custom-checkbox">Is this a featured mission?
+        <input ng-model="$ctrl.newMission.isFeatured" type="checkbox" name="isFeatured" id="isFeatured" class="custom-checkbox">
+    </label>
+
+    <input type="hidden" ng-model="$ctrl.newMission.launchLat">
+    <input type="hidden" ng-model="$ctrl.newMission.launchLong">
+
+    <section id="add-mission-form-btn">
+        <input type="submit" value="Save" id="add-mission-save">
+        <input type="button" value="Cancel" id="add-mission-cancel" ng-click="$ctrl.goToPage('/admin')">
+    </section>
+</form>

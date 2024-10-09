@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cosmicQuarry">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmicQuarry</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="components/featured-missions/featured-mission.module.js"></script>
+    <script src="components/featured-missions/featured-missions.component.js"></script>
+
+    <script src="components/all-missions/all-missions.module.js"></script>
+    <script src="components/all-missions/all-missions.component.js"></script>
+
+    <script src="components/mission-details/mission-details.module.js"></script>
+    <script src="components/mission-details/mission-details.component.js"></script>
+
+    <script src="components/admin-panel/admin-panel.module.js"></script>
+    <script src="components/admin-panel/admin-panel.component.js"></script>
+
+    <script src="components/admin-mission-details/admin-mission-details.module.js"></script>
+    <script src="components/admin-mission-details/admin-mission-details.component.js"></script>
+
+    <script src="components/edit-mission/edit-mission.module.js"></script>
+    <script src="components/edit-mission/edit-mission.component.js"></script>
+
+    <script src="components/add-mission/add-mission.module.js"></script>
+    <script src="components/add-mission/add-mission.component.js"></script>
+
+    <script src="components/footer/footer.component.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/29da9f6bf5.js" crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT2_sA3Z-aoztwo3AhNk8shuwWu7l80GA" async defer></script>
+</head>
+<div id="container">
+    <header>
+        <a href="/"><img src="/CosmicQuarryLogo.png" alt="CosmicQuarry Logo" id="logo"></a>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#!/admin" id="nav-admin">admin</a>
+                    </li>
+                    <li>
+                        <a href="/login">account</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1><a href="/" id="main-title">CosmicQuarry</a></h1>
+        </div>
+    </header>
+    <body>
+    <main>
+
+        <div ng-view></div>
+    
+    </main>
+    </div>
+
+    <app-footer></app-footer>
+
+</html>

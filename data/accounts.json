@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "firstName": "Saralyn",
+        "lastName": "Leonard",
+        "email": "saralynl@bu.edu",
+        "isAdmin": true
+    },
+    {
+        "id": 2,
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@doe.com",
+        "isAdmin": false
+    }
+]
