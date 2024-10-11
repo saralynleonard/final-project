@@ -12,7 +12,11 @@ angular.module("editMission").
 
                 self.mission = missions.find(mission => mission.id == self.missionId)
 
-                // self.launchDate = self.mission.launchDate
+                //convert the mission.launchDate to a date object
+                dateObj = new Date(self.mission.launchDate)
+                self.mission.launchDate = dateObj
+
+                
                 console.log(self.mission.launchDate)
                 let missionName 
                 missionName = self.mission.name
