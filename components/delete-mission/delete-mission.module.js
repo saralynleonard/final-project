@@ -1,0 +1,1 @@
+angular.module('deleteMission', ['ngRoute'])

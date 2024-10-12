@@ -1,0 +1,16 @@
+<h3>Delete the {{$ctrl.mission.name}} Mission</h3>
+<form id="delete-mission-form">
+    <!-- <input ng-model="$ctrl.mission.name" type="text" name="missionName" id="missionName">
+    <br>
+
+    <input ng-model="$ctrl.mission.launchDate" type="date" name="launchDate" id="launchDate">
+
+    <input ng-model="$ctrl.mission.missionCost" type="number" name="missionCost" id="missionCost">
+
+    <textarea ng-model="$ctrl.mission.aboutMission" name="aboutMission" id="aboutMission"></textarea> -->
+
+    <section id="delete-mission-form-btn">
+        <input ng-click="$ctrl.deleteMission()" type="button" value="Delete" id="delete-mission-save">
+        <input ng-click="$ctrl.goToPage('/admin')" type="button" value="Cancel" id="delete-mission-cancel">
+    </section>
+</form>

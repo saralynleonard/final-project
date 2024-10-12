@@ -22,6 +22,9 @@ angular.module("cosmicQuarry")
             .when('/add/mission', {
                 template: '<add-mission></add-mission>'
             })
+            .when('/mission/delete/:missionId', {
+                template: '<delete-mission></delete-mission>'
+            })
             .otherwise({
                 redirectTo: '/'
             })
