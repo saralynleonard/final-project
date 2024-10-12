@@ -53,6 +53,7 @@ angular.module("featuredMissions")
                 // this.missions = featuredMissions
 
             }
+
             this.missions = featuredMissions
 
         }

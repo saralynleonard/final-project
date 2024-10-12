@@ -7,5 +7,6 @@ angular.module('cosmicQuarry',
         'adminMissionDetails',
         'editMission',
         'addMission',
-        'deleteMission'
+        'deleteMission',
+        'previouslyViewed'
    ]);

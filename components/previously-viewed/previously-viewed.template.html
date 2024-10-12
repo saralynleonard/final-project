@@ -1,0 +1,13 @@
+<h2 id="previously-viewed-missions">Recently Viewed Missions</h2>
+<div id="card-section">
+    <div id="card" ng-repeat="mission in $ctrl.missions">
+        <div id="card-title">{{mission.name}}</div>
+        <div id="card-body">
+            <p>
+                {{mission.aboutMission}}
+            </p>
+        </div>
+        <div id="launch-date"><p>Launch Date: {{mission.launchDate | date: 'longDate'}}</p></div>
+        <a href="#!/mission/{{mission.id}}" id="card-button">Mission Details</a>
+    </div>
+</div>

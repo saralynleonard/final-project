@@ -25,6 +25,9 @@ angular.module("cosmicQuarry")
             .when('/mission/delete/:missionId', {
                 template: '<delete-mission></delete-mission>'
             })
+            .when('/recent', {
+                template: '<previously-viewed></previously-viewed>'
+            })
             .otherwise({
                 redirectTo: '/'
             })

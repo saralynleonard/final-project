@@ -3,10 +3,9 @@ angular.module("missionDetails").
         templateUrl: "components/mission-details/mission-details.template.html", 
         controller: ['$http', '$routeParams', 
             function MissionDetailController($http, $routeParams) {
-
-
                 let self = this;
 
+                let viewedMissions = []
 
                 self.displayMission = function() {
                     self.missionId = $routeParams.missionId
@@ -24,6 +23,66 @@ angular.module("missionDetails").
                     let missions = JSON.parse(storedList)
 
                     self.mission = missions.find(mission => mission.id == self.missionId)
+
+                    //check local storage for viewedMissions array
+                    let exists = false
+
+                    let storedViewedMissions = window.localStorage.getItem('viewedMissions')
+                    if(storedViewedMissions) {
+                        let parsedViewedList = JSON.parse(storedViewedMissions)
+
+                        for (let i = 0; i < parsedViewedList.length; i++) {
+                            if(parsedViewedList[i].id == self.missionId) {
+                                exists = true
+                                break
+                            }
+                        }
+
+                        if(exists) {
+                            console.log("this mission has already been added to the viewdMissions array.")
+                        }
+                        if(!exists) {
+                            let viewedMission = {
+                                id: self.mission.id,
+                                name: self.mission.name,
+                                launchDate: self.mission.name,
+                                aboutMission: self.mission.aboutMission,
+                                missionCost: self.mission.missionCost,
+                                targetAsteroid: self.mission.targetAsteroid,
+                                isFeatured: self.mission.isFeatured,
+                                launchLocation: self.mission.launchLocation,
+                                launchLat: self.mission.launchLat,
+                                launchLong: self.mission.launchLong,
+                                viewedDate: new Date()
+                            }
+
+                            parsedViewedList.push(viewedMission)
+                            console.log(parsedViewedList)
+                            window.localStorage.setItem('viewedMissions', JSON.stringify(parsedViewedList))
+                        }
+
+                    }
+                    if(!storedViewedMissions) {
+                        let viewedMission = {
+                            id: self.mission.id,
+                            name: self.mission.name,
+                            launchDate: self.mission.name,
+                            aboutMission: self.mission.aboutMission,
+                            missionCost: self.mission.missionCost,
+                            targetAsteroid: self.mission.targetAsteroid,
+                            isFeatured: self.mission.isFeatured,
+                            launchLocation: self.mission.launchLocation,
+                            launchLat: self.mission.launchLat,
+                            launchLong: self.mission.launchLong,
+                            viewedDate: new Date()
+                        }
+                        // let parsedViewedList = JSON.parse(storedViewedMissions)
+                        viewedMissions.push(viewedMission)
+
+                        window.localStorage.setItem('viewedMissions', JSON.stringify(viewedMissions))
+
+                    }
+
                     self.initMap()
                 }
 
