@@ -8,5 +8,6 @@ angular.module('cosmicQuarry',
         'editMission',
         'addMission',
         'deleteMission',
-        'previouslyViewed'
+        'previouslyViewed',
+        'error'
    ]);

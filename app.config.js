@@ -29,6 +29,9 @@ angular.module("cosmicQuarry")
                 template: '<previously-viewed></previously-viewed>'
             })
             .otherwise({
-                redirectTo: '/'
+                redirectTo: '/error'
+            })
+            .when('/error', {
+                template: '<error></error>'
             })
     }])
