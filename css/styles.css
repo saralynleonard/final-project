@@ -235,6 +235,22 @@ margin-top: auto;
 font-size: 1.1rem;
 }
 
+.error {
+    font-size: var(--font-size-md);
+    margin-bottom: 50px;
+}
+
+#error-title {
+    font-weight: 700;
+    font-size: var(--font-size-xl);
+}
+
+.error-icon {
+    height: 200px;
+    width: 200px;
+    color: #FF3D00;
+}
+
 h3 {
 font-size: 24px;
 }
@@ -523,8 +539,9 @@ input[type="checkbox"] {
     margin: 20px 0 5px 0;
 }
 
-#directions {
-    margin-bottom: 50px;
+#directions,
+#error-return-home {
+    margin: 50px;
     color: #00BFFF;
 }
 
