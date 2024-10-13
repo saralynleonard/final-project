@@ -118,6 +118,77 @@
         "launchLocation": "Spaceport America",
         "launchLat": 32.9901, 
         "launchLong": -106.9751
+    },
+    {
+        "id": 11,
+        "name": "Stellar Mining Expedition",
+        "launchDate": "2040-08-19",
+        "aboutMission": "The Stellar Mining Expedition will target the asteroid Gaspra, focusing on its surface for valuable minerals. The mission will employ high-resolution imaging and spectrometry to identify resource-rich areas. Plans include deploying robotic drones to collect samples and analyze their composition. The mission aims to determine the feasibility of mining operations on Gaspra and contribute to understanding the asteroid's structure and evolution.",
+        "missionCost": 1658470000,
+        "targetAsteroid": "Gaspra",
+        "isFeatured": false,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    },
+    {
+        "id": 12,
+        "name": "Celestial Resources Initiative",
+        "launchDate": "2038-06-29",
+        "aboutMission": "The initiative will focus on extracting silicate minerals and metals, including iron and magnesium, from 243 Ida. These materials could be valuable for construction and manufacturing in space habitats.",
+        "missionCost": 2348470000,
+        "targetAsteroid": "243 Ida",
+        "isFeatured": false,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
+    },
+    {
+        "id": 13,
+        "name": "Nebula Harvest",
+        "launchDate": "2036-10-09",
+        "aboutMission": "The Nebula Harvest mission will focus on mining metals and silicate materials from Lutetia. The resources extracted will be evaluated for their potential industrial applications in space.",
+        "missionCost": 2678470000,
+        "targetAsteroid": "Lutetia",
+        "isFeatured": false,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
+    },
+    {
+        "id": 14,
+        "name": "Platinum Prospect",
+        "launchDate": "2038-10-19",
+        "aboutMission": "The Platinum Prospect mission will focus on mining platinum-group metals from the Trojan asteroid Hektor. Equipped with advanced spectrometers and robotic arms, the mission will aim to locate and extract these high-value materials. The focus will be on assessing the economic viability of mining operations, with a long-term goal of supplying these metals for technology and industrial applications.",
+        "missionCost": 3878470000,
+        "targetAsteroid": "Hektor",
+        "isFeatured": false,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    },
+    {
+        "id": 15,
+        "name": "Miner's Fortune",
+        "launchDate": "2041-10-06",
+        "aboutMission": "The Miner’s Fortune mission will target Asporina to extract nickel, cobalt, and rare earth elements. The spacecraft will utilize drillers and automated sampling systems to identify resource-rich zones. This mission will explore the potential for utilizing these materials in advanced battery production, supporting the growing demand for energy storage technologies on Earth and in space.",
+        "missionCost": 3878470000,
+        "targetAsteroid": "246 Asporina",
+        "isFeatured": false,
+        "launchLocation": "Spaceport America",
+        "launchLat": 32.9901, 
+        "launchLong": -106.9751
+    },
+    {
+        "id": 16,
+        "name": "Nebula Recon",
+        "launchDate": "2039-03-15",
+        "aboutMission": "The Nebula Recon mission will focus on Acheron to mine rare minerals and water ice. Utilizing spectroscopic analysis and automated drilling systems, the spacecraft will evaluate the asteroid’s geology and identify areas for resource extraction. This mission aims to establish Acheron as a potential refueling station for deeper space missions, providing essential resources for astronauts.",
+        "missionCost": 7868470000,
+        "targetAsteroid": "2839 Acheron",
+        "isFeatured": false,
+        "launchLocation": "Cape Canaveral",
+        "launchLat": 28.396837, 
+        "launchLong": -80.605659
     }
-    
 ]
