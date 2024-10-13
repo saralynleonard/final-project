@@ -28,6 +28,9 @@ angular.module("cosmicQuarry")
             .when('/recent', {
                 template: '<previously-viewed></previously-viewed>'
             })
+            .when('/user/:accountId', {
+                template: '<account-view></account-view>'
+            })
             .otherwise({
                 redirectTo: '/error'
             })

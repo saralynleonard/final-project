@@ -1,8 +1,32 @@
 
-<section id="add-mission-section">
-    <button ng-click="$ctrl.goToPage('/add/mission')" id="add-mission-btn">
-        + Add Mission
-    </button>
+<section id="admin-panel-aside">
+    <div id="add-mission-section">
+        <button ng-click="$ctrl.goToPage('/add/mission')" id="add-mission-btn">
+            + Add Mission
+        </button>
+    </div>
+
+    <p id="user-list-title">Users</p>
+    <div id="user-list">
+        <ul>
+            <li ng-repeat="account in $ctrl.accounts">
+                <a href="#!/user/{{account.id}}">{{account.firstName}} {{account.lastName}}</a>
+            </li>
+        </ul>
+    </div>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Users</th>
+            </tr>
+        </thead>
+
+        <tr ng-repeat="account in $ctrl.accounts">
+            <td><a href="/user/{{account.id}}">{{account.firstName}} {{account.lastName}}</a></td>
+        </tr>
+
+    </table> -->
+
 </section>
 <section id="admin-mission-search">
     <form method="POST" action="/lookup/mission" id="admin-mission-search-form">
@@ -37,7 +61,7 @@
     </table>
 </div>
 
-<div id="user-list">
+<!-- <div id="user-list">
     <table>
         <thead>
             <tr>
@@ -50,4 +74,4 @@
         </tr>
 
     </table>
-</div>
+</div> -->

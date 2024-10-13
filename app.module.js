@@ -9,5 +9,6 @@ angular.module('cosmicQuarry',
         'addMission',
         'deleteMission',
         'previouslyViewed',
+        'accountView',
         'error'
    ]);

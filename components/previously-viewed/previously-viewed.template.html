@@ -2,6 +2,7 @@
     <h2 id="previously-viewed-missions">Recently Viewed Missions</h2>
     <div id="card-section">
         <div id="card" ng-repeat="mission in $ctrl.missions">
+            <p>Last viewed: {{mission.viewedDate | date: 'shortDate'}}</p>
             <div id="card-title">{{mission.name}}</div>
             <div id="card-body">
                 <p>
