@@ -17,7 +17,7 @@
     </thead>
     <tbody>
         <tr ng-repeat="investment in $ctrl.investments">
-            <td id="table-msn-name"><a href="/mission/{{investment.id}}">{{investment.investmentMission}}</a></td>
+            <td id="table-msn-name"><a href="#!/mission/{{investment.missionId}}">{{investment.investmentMission}}</a></td>
             <td>{{investment.investmentAmount | currency}}</td>
             <td>
                 <a href="/investment/edit/{{this._id}}">Edit</a> |

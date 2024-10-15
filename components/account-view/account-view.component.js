@@ -30,7 +30,8 @@ angular.module("accountView").
                         investmentAmount: parsedInvestments[i].investmentAmount,
                         investmentPercent: (parsedInvestments[i].investmentAmount / mission.missionCost) * 100,
                         investmentAccount: self.account.firstName + ' ' + self.account.lastName,
-                        investmentMission: mission[0].name
+                        investmentMission: mission[0].name,
+                        missionId: mission[0].id
                     }
                     console.log(investmentObject)
                     investments.push(investmentObject)

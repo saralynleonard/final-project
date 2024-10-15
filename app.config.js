@@ -37,6 +37,9 @@ angular.module("cosmicQuarry")
             .when('/account/login', {
                 template: '<account-login></account-login>'
             })
+            .when('/account/edit/:accountId', {
+                template: '<edit-account></edit-account>'
+            })
             .otherwise({
                 redirectTo: '/error'
             })
