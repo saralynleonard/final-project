@@ -10,5 +10,6 @@ angular.module('cosmicQuarry',
         'deleteMission',
         'previouslyViewed',
         'accountView',
+        'invest',
         'error'
    ]);

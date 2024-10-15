@@ -31,6 +31,9 @@ angular.module("cosmicQuarry")
             .when('/user/:accountId', {
                 template: '<account-view></account-view>'
             })
+            .when('/invest/:missionId', {
+                template: '<invest></invest>'
+            })
             .otherwise({
                 redirectTo: '/error'
             })

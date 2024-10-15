@@ -1,0 +1,19 @@
+<h3>Invest in {{$ctrl.mission.name}}</h3>
+<form ng-submit="$ctrl.addInvestment($ctrl.newInvestment)" id = "add-investment-form">
+    <input ng-model="$ctrl.newInvestment.investmentAmount" type="number" id="investmentAmount" name="investmentAmount" min="1" step="1" placeholder="Investment Amount">
+
+    <input type="hidden" id="accountID" name="accountID">
+
+    <label for="userAcct">Select an account</label>
+    <select ng-model="$ctrl.newInvestment.accountId" ng-options="account in $ctrl.accounts" name="userAcct" id="userAccount">
+        <option value="Select a user"></option>
+        <!-- <option ng-repeat="account in $ctrl.accounts" value="account.id">{{account.firstName}} {{account.lastName}}</option> -->
+    </select>
+
+    <input ng-model="$ctrl.newInvestment.missionId" type="hidden" id="missionID" name="missionID">
+
+    <section id="add-investment-form-btn">
+        <input type="submit" value="Save" id="add-investment-save">
+        <input type="button" value="Cancel" id="add-investment-cancel" ng-click="$ctrl.goToPage()">
+    </section>
+</form>
