@@ -1,0 +1,16 @@
+<!-- {{#if logoutMsg}}
+<h4>{{logoutMst}}</h4>
+{{/if}} -->
+<h3>Account Login</h3>
+<form ng-submit="$ctrl.login(selectedAccount)" id="account-login-form">
+        <label for="userAcct">Select a user</label>
+        <select ng-model="selectedAccount" name="userAcct" id="userAcct">
+            <option ng-repeat="account in $ctrl.accounts" value="{{account.id}}">{{account.firstName}} {{account.lastName}}</option>
+        </select>
+
+        <section id="login-form-btn">
+            <input type="submit" value="Login" id="acct-login">
+            <input type="button" value="Cancel" id="acct-login-cancel" onclick="cancelLogin()">
+        </section>
+
+</form>

@@ -1,13 +1,13 @@
 <section id="acct-actions">
-    <a href="/account/logout" id="acct-logout-btn">Logout </a> <div id="acct-actions-separator">|</div>
+    <a href="#!/account/login" id="acct-logout-btn">Logout </a> <div id="acct-actions-separator">|</div>
     <a href="#!/account/edit/{{$ctrl.account.id}}" id="acct-edit-btn"> Edit Account</a>
 </section>
 <section id="acct-view-greeting">
     <h3>Hi, {{$ctrl.account.firstName}}!</h3>
 </section>
 
-<p>View, edit or delete your investments.</p>
- <table>
+<p ng-if="$ctrl.investments.length">View, edit or delete your investments.</p>
+ <table ng-if="$ctrl.investments.length">
     <thead>
         <tr>
             <th>Mission Name</th>
@@ -15,30 +15,28 @@
             <th></th>
         </tr>
     </thead>
-    <!-- <tbody>
-        {{#each investments}}
-        {{#if this.missionID.isComplete}}
-        {{else}}
-        <tr>
-            <td id="table-msn-name"><a href="/mission/{{this.missionID._id}}">{{this.missionID.missionName}}</a></td>
-            <td>${{formatNumber this.investmentAmount}}</td>
+    <tbody>
+        <tr ng-repeat="investment in $ctrl.investments">
+            <td id="table-msn-name"><a href="/mission/{{investment.id}}">{{investment.investmentMission}}</a></td>
+            <td>{{investment.investmentAmount | currency}}</td>
             <td>
                 <a href="/investment/edit/{{this._id}}">Edit</a> |
                 <a href="/investment/delete/{{id}}">Delete</a>              
             </td>
         </tr>
-        {{/if}}
-        {{/each}}
-    </tbody> -->
+    </tbody>
  </table>
-  <a href="/missions" id="view-missions-btn">Browse Available Missions</a>
-<!-- {{else}} -->
-<p id="acct-no-investment">You haven't made an investment yet. <br>
-<a href="/missions" id="acct-mission-browse-btn">Browse available missions</a> and select one to invest in.</p>
+<a ng-if="investments" href="#!/missions" id="view-missions-btn">Browse Available Missions</a>
+
+<div ng-if="!$ctrl.investments.length" class="no-investments">
+    <p id="acct-no-investment">You haven't made an investment yet. <br>
+    <a href="#!/missions" id="acct-mission-browse-btn">Browse available missions</a> and select one to invest in.</p>    
+</div>
+
 <!-- {{/if}}
 {{#each investments}}
 {{#if this.missionID.isComplete}} -->
-<h3>Past Investments</h3>
+<!-- <h3>Past Investments</h3>
 <table>
     <thead>
         <tr>
@@ -49,11 +47,11 @@
     </thead>
     <tbody>
         <tr>
-            <!-- <td>{{this.missionID.missionName}}</td>
+            <td>{{this.missionID.missionName}}</td>
             <td>${{formatNumber this.investmentAmount}}</td>
-            <td>${{formatNumber this.paymentAmount}}</td> -->
+            <td>${{formatNumber this.paymentAmount}}</td>
         </tr>
     </tbody>
-</table>
+</table> -->
 <!-- {{/if}}
 {{/each}} -->

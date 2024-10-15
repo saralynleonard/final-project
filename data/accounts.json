@@ -12,5 +12,12 @@
         "lastName": "Doe",
         "email": "john@doe.com",
         "isAdmin": false
+    },
+    {
+        "id": 3,
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "email": "Jane@doe.com",
+        "isAdmin": false
     }
 ]

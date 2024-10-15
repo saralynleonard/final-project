@@ -55,6 +55,8 @@ angular.module("adminMissionDetails").
                     self.investments = investments.filter(investment => investment.missionId === self.mission.id)
 
                     console.log(self.investments)
+
+                    window.localStorage.setItem('storedInvestments', JSON.stringify(investments))
                 })                    
 
                 }

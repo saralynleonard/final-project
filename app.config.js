@@ -34,6 +34,9 @@ angular.module("cosmicQuarry")
             .when('/invest/:missionId', {
                 template: '<invest></invest>'
             })
+            .when('/account/login', {
+                template: '<account-login></account-login>'
+            })
             .otherwise({
                 redirectTo: '/error'
             })
