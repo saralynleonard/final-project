@@ -71,18 +71,27 @@ angular.module("invest")
         }
 
         this.addInvestment = function(investment) {
-            if(investment.investmentAmount > 0 && investment.accountId > 0) {
+            console.log(investment.accountId.id)
+            if(investment.investmentAmount > 0 && investment.accountId.id > 0) {
                 nextId = this.getNextId(investments) + 1
 
                 investments.push({
                     id: nextId, 
                     investmentAmount: investment.investmentAmount,
-                    accountId: investment.accountId,
+                    accountId: investment.accountId.id,
                     missionId: investment.missionId
                 })
                 window.localStorage.setItem('storedInvestments', JSON.stringify(investments))
                 this.goToPage()
             }
+        }
+
+        this.getROI = function() {
+            let percent = this.newInvestment.investmentAmount / this.mission.missionCost
+            let materialsSold = this.mission.missionCost * 1.5
+            let materialsSoldPercent = (this.newInvestment.investmentAmount / materialsSold) * 100
+
+            return materialsSold * percent
         }
 
         this.goToPage = function() {

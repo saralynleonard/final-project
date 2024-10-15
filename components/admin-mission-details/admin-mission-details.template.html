@@ -9,7 +9,7 @@
 <div id="admin-mission-detail-options">
     <a id="admin-mission-detail-edit" href="#!/edit/{{$ctrl.mission.id}}">Edit</a>
     <div id="admin-mission-detail-options-separator">|</div>
-    <a id="admin-mission-detail-delete" href="/mission/delete/{{$ctrl.mission.id}}">Delete</a>
+    <a id="admin-mission-detail-delete" href="#!/mission/delete/{{$ctrl.mission.id}}">Delete</a>
 </div>
 <div id="table-container">
     <div id="total-investments">
@@ -18,17 +18,18 @@
     <table>
         <thead>
             <tr>
-                <th>Investment ID</th>
+                <th>Account</th>
                 <th>Investment Amount</th>
-                <th></th>
+                <th>Percent</th>
             </tr>
         </thead>
         <tbody>
             <tr ng-repeat="investment in $ctrl.investments">
-                <td>{{investment.id}}</td>
+                <td>{{investment.investmentAccount}}</td>
 
                 <td>{{investment.investmentAmount | currency}}</td>
-                <td><a id="admin-mission-detail-edit" href="/admin/investment/details/{{investment.id}}">View</a></td>
+                <td>{{investment.investmentPercent | number:6}}%</td>
+                <!-- <td><a id="admin-mission-detail-edit" href="/admin/investment/details/{{investment.id}}">View</a></td> -->
             </tr>
 
         </tbody>
