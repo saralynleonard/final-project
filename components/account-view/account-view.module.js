@@ -1,1 +1,1 @@
-angular.module("accountView", ['ngRoute'])
+angular.module('accountView', ['ngRoute'])

@@ -1,5 +1,5 @@
-angular.module("accountView")
-  .component('accountView', {
+angular.module("accountView").
+  component('accountView', {
     templateUrl: 'components/account-view/account-view.template.html',
     controller: function AccountViewController($http, $location, $routeParams) {
         let self = this;
@@ -10,6 +10,8 @@ angular.module("accountView")
         self.accountId = $routeParams.accountId
 
         self.account = accounts.find(account => account.id == self.accountId)
+
+        console.log(self.account)
 
 
 

@@ -45,7 +45,7 @@ angular.module("missionDetails").
                             let viewedMission = {
                                 id: self.mission.id,
                                 name: self.mission.name,
-                                launchDate: self.mission.name,
+                                launchDate: self.mission.launchDate,
                                 aboutMission: self.mission.aboutMission,
                                 missionCost: self.mission.missionCost,
                                 targetAsteroid: self.mission.targetAsteroid,

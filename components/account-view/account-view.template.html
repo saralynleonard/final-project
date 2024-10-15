@@ -1,11 +1,11 @@
 <section id="acct-actions">
     <a href="/account/logout" id="acct-logout-btn">Logout </a> <div id="acct-actions-separator">|</div>
-    <a href="/account/edit/{{$ctrl.account.id}}" id="acct-edit-btn"> Edit Account</a>
+    <a href="#!/account/edit/{{$ctrl.account.id}}" id="acct-edit-btn"> Edit Account</a>
 </section>
 <section id="acct-view-greeting">
     <h3>Hi, {{$ctrl.account.firstName}}!</h3>
 </section>
-{{#if investments}}
+
 <p>View, edit or delete your investments.</p>
  <table>
     <thead>
@@ -15,7 +15,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+    <!-- <tbody>
         {{#each investments}}
         {{#if this.missionID.isComplete}}
         {{else}}
@@ -24,20 +24,20 @@
             <td>${{formatNumber this.investmentAmount}}</td>
             <td>
                 <a href="/investment/edit/{{this._id}}">Edit</a> |
-                <a href="/investment/delete/{{this._id}}">Delete</a>              
+                <a href="/investment/delete/{{id}}">Delete</a>              
             </td>
         </tr>
         {{/if}}
         {{/each}}
-    </tbody>
+    </tbody> -->
  </table>
   <a href="/missions" id="view-missions-btn">Browse Available Missions</a>
-{{else}}
+<!-- {{else}} -->
 <p id="acct-no-investment">You haven't made an investment yet. <br>
 <a href="/missions" id="acct-mission-browse-btn">Browse available missions</a> and select one to invest in.</p>
-{{/if}}
+<!-- {{/if}}
 {{#each investments}}
-{{#if this.missionID.isComplete}}
+{{#if this.missionID.isComplete}} -->
 <h3>Past Investments</h3>
 <table>
     <thead>
@@ -49,11 +49,11 @@
     </thead>
     <tbody>
         <tr>
-            <td>{{this.missionID.missionName}}</td>
+            <!-- <td>{{this.missionID.missionName}}</td>
             <td>${{formatNumber this.investmentAmount}}</td>
-            <td>${{formatNumber this.paymentAmount}}</td>
+            <td>${{formatNumber this.paymentAmount}}</td> -->
         </tr>
     </tbody>
 </table>
-{{/if}}
-{{/each}}
+<!-- {{/if}}
+{{/each}} -->
