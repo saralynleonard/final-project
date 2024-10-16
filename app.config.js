@@ -40,6 +40,12 @@ angular.module("cosmicQuarry")
             .when('/account/edit/:accountId', {
                 template: '<edit-account></edit-account>'
             })
+            .when('/investment/edit/:investmentId', {
+                template: '<edit-investment></edit-investment>'
+            })
+            .when('/investment/delete/:investmentId', {
+                template: '<delete-investment></delete-investment>'
+            })
             .otherwise({
                 redirectTo: '/error'
             })

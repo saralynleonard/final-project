@@ -13,5 +13,7 @@ angular.module('cosmicQuarry',
         'invest',
         'accountLogin',
         'editAccount',
+        'editInvestment',
+        'deleteInvestment',
         'error'
    ]);

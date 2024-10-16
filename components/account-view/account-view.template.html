@@ -20,8 +20,8 @@
             <td id="table-msn-name"><a href="#!/mission/{{investment.missionId}}">{{investment.investmentMission}}</a></td>
             <td>{{investment.investmentAmount | currency}}</td>
             <td>
-                <a href="/investment/edit/{{this._id}}">Edit</a> |
-                <a href="/investment/delete/{{id}}">Delete</a>              
+                <a href="#!/investment/edit/{{investment.id}}">Edit</a> |
+                <a href="#!/investment/delete/{{investment.id}}" id="acct-invest-delete">Delete</a>              
             </td>
         </tr>
     </tbody>

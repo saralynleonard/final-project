@@ -1,0 +1,12 @@
+<h3>Delete your investment</h3>
+<!--<h3>Edit your investment in the {{missionName}} mission<h3> -->
+<form ng-submit="$ctrl.deleteInvestment()" id ="delete-investment-form">
+    <input ng-model="$ctrl.investment.investmentAmount" type="number" name="investmentAmount" id="investmentAmount">
+
+    <input type="hidden" id="investmentID" name="investmentID">
+
+    <section id="delete-investment-form-btn">
+        <input type="submit" value="Delete" id="delete-investment-save">
+        <input type="button" value="Cancel" id="delete-investment-cancel" ng-click="$ctrl.goToPage()">
+    </section>
+</form>

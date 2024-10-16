@@ -63,7 +63,7 @@ angular.module("invest")
 
             for(let i = 0; i < investments.length; i++) {
                 if(investments[i].id > maxId) {
-                    maxId = missions[i].id
+                    maxId = investments[i].id
                 }
             }
             console.log(maxId)

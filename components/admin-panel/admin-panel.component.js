@@ -32,6 +32,12 @@ angular.module("adminPanel")
 
         this.missions = missions
 
+        this.asteroids = Array.from(new Set(this.missions.map(function(mission) {
+          return mission.targetAsteroid
+        })))
+
+        console.log(this.asteroids)
+
 
         // $http.get("data/missions.json").then(function(response) {
         //     for(let i = 0; i< response.data.length; i++) {

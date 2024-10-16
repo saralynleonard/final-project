@@ -19,5 +19,9 @@ angular.module("accountLogin").
         this.login = function(id) {
             $location.path(`/user/${id}`)
         }
+
+        this.cancel = function() {
+            $location.path('/')
+        }
     } 
 })
