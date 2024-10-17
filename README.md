@@ -3,10 +3,13 @@
 * Additional technologies used:
   - Local Storage
   - Google Maps API
+  - JSON
   - SVGs
-* Click Account to login as one of two users:
+* Use xampp to run CosmicQuarry, or VSCode's Live Server
+* Click Account to login as one of three users:
   - Saralyn Leonard
   - John Doe
+  - Jane Doe (no associated investments)
 * Click Logout on the Account page to select a different user
 * On the Admin page, search missions by name, description, or targeted asteroid. Asteroids used in this application are:
   - 16 Psyche
