@@ -2,15 +2,7 @@ angular.module("allMissions")
   .component('allMissions', {
     templateUrl: 'components/all-missions/all-missions.template.html',
     controller: function MissionsController($http) {
-        
         let missions = []
-
-        // $http.get("data/missions.json").then(function(response) {
-        //     for(let i = 0; i< response.data.length; i++) {
-        //             missions.push(response.data[i])
-        //     }
-        // })
-
         let storedList = window.localStorage.getItem('storedMissions')
 
         if(storedList) {
@@ -26,8 +18,6 @@ angular.module("allMissions")
               window.localStorage.setItem('storedMissions', JSON.stringify(missions))
           })
         }
-
         this.missions = missions
-
         }
     })

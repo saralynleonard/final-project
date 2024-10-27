@@ -10,14 +10,6 @@ angular.module("missionDetails").
                 self.displayMission = function() {
                     self.missionId = $routeParams.missionId
 
-                    // $http.get("../data/missions.json").then(function(response) {
-    
-                    //     const missions = response.data
-    
-                    //     self.mission = missions.find(mission => mission.id == self.missionId)
-                    //     self.initMap()
-                    // })
-
                     /**Get missions from local storage then find the selected mission */
                     let storedList = window.localStorage.getItem('storedMissions')
                     let missions = JSON.parse(storedList)

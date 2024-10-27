@@ -3,16 +3,9 @@ angular.module("adminPanel")
     templateUrl: 'components/admin-panel/admin-panel.template.html',
     controller: function AdminPanelController($http, $location) {
         
-
         let accounts = []
 
         let missions = []
-
-        // $http.get("data/missions.json").then(function(response) {
-        //     for(let i = 0; i< response.data.length; i++) {
-        //             missions.push(response.data[i])
-        //     }
-        // })
 
         let storedList = window.localStorage.getItem('storedMissions')
 
@@ -37,15 +30,6 @@ angular.module("adminPanel")
         })))
 
         console.log(this.asteroids)
-
-
-        // $http.get("data/missions.json").then(function(response) {
-        //     for(let i = 0; i< response.data.length; i++) {
-        //             missions.push(response.data[i])
-        //     }
-        // })
-
-        // this.missions = missions
 
         /**Check local storage for storedAccounts; if found, parse the returned array then assign to this.accounts
          * If not found, iterate through accounts.json and add each account to accounts[] 

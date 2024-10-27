@@ -19,9 +19,7 @@ angular.module("deleteMission").
                 //then go back to the admin page
                 self.deleteMission = function() {
                     const index = missions.indexOf(self.mission)
-
                     console.log("Deleting the ", self.mission.name, " mission. Index: ", index)
-
                     missions.splice(index, 1)
                     localStorage.setItem('storedMissions', JSON.stringify(missions))
                     self.goToPage('/admin')

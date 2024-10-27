@@ -35,29 +35,3 @@ angular.module("editMission").
             }
         ]
     })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    // dateObj = new Date(self.mission.launchDate)
-
-                // if(!isNaN(dateObj.getTime())) {
-                //     self.mission.launchDate = dateObj.toISOString().split('T')[0]
-                //     console.log("Valid date: ", dateObj)
-                // } else {
-                //     console.error("Invalid date: ", self.mission.launchDate)
-                // }

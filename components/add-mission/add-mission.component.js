@@ -22,7 +22,6 @@ angular.module("addMission").
                     launchLat: 32.9901, 
                     launchLong: -106.9751
                 }
-
                 //get the next available id
                 self.getNextId = function() {
                     let maxId = 0
@@ -36,7 +35,6 @@ angular.module("addMission").
                     return maxId
                     
                 }
-
                 //push the newMission object to the missions array, then save the array to local storage.
                 self.addMission = function(mission) {
                     if(mission.name && mission.launchDate && mission.missionCost && mission.aboutMission) {
@@ -57,8 +55,7 @@ angular.module("addMission").
                         self.goToPage('/admin')
                     }
                 }
-                
-                //
+
                 self.goToPage = function(page) {
                     $location.path(page)
                 }
